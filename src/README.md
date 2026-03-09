@@ -63,31 +63,21 @@ Siga o guia completo: **[GITHUB_DO_ZERO.md](GITHUB_DO_ZERO.md)**
 
 ## ⚠️ ERRO COMUM NO VERCEL
 
-Se você recebeu este erro:
-```
-No Output Directory named "dist" found
-```
+### ❌ Erro: "No Output Directory named 'dist' found"
 
-**E/OU este erro:**
-```
-You've added another git repository inside your current repository
-```
-
----
-
-## 🚀 SOLUÇÃO AUTOMÁTICA (Windows)
-
-Execute este script que corrige **TUDO** automaticamente:
+**Solução RÁPIDA:**
 
 ```cmd
+test-build.bat
 fix-tudo-e-deploy.bat
 ```
 
-**Este script vai:**
-- ✅ Remover repositórios aninhados (desktop-tutorial)
-- ✅ Corrigir configuração do Vercel
-- ✅ Fazer commit e push automático
-- ✅ Iniciar deploy no Vercel
+**Guias:**
+- **SOLUCAO_DIST.md** ⭐ - Solução em 2 comandos
+- **FACA_AGORA_DIST.md** - Passo a passo visual
+- **FIX_DIST_ERROR.md** - Solução completa
+
+**Tempo:** 5-7 minutos
 
 ---
 

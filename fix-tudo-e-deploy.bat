@@ -90,6 +90,15 @@ echo.
 
 :: Adicionar todos os arquivos
 echo [5/7] Adicionando arquivos corrigidos...
+git add vercel.json
+git add .vercelignore
+git add test-build.bat
+git add FIX_DIST_ERROR.md
+git add ERRO_CORRIGIDO.md
+git add EXECUTE_AGORA_CORRIGIDO.md
+git add EXECUTAR_AQUI.md
+git add COMANDOS_CORRETOS.md
+git add ONDE_EXECUTAR.md
 git add .
 echo [OK] Arquivos adicionados!
 echo.
