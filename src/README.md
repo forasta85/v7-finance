@@ -63,7 +63,26 @@ Siga o guia completo: **[GITHUB_DO_ZERO.md](GITHUB_DO_ZERO.md)**
 
 ## ⚠️ ERRO COMUM NO VERCEL
 
-### ❌ Erro: "No Output Directory named 'dist' found"
+### ❌ Erro 1: "Repository does not contain the requested branch"
+
+**Significa:** GitHub está **vazio** (código não foi enviado)
+
+**Solução RÁPIDA:**
+
+```cmd
+verificar-git.bat
+primeiro-push.bat
+```
+
+**Guias:**
+- **RESOLVER_AGORA.md** ⭐ - Solução em 2 comandos
+- **FIX_REPOSITORIO_VAZIO.md** - Passo a passo completo
+
+**Tempo:** 2-3 minutos
+
+---
+
+### ❌ Erro 2: "No Output Directory named 'dist' found"
 
 **Solução RÁPIDA:**
 
