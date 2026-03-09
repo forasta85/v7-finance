@@ -28,6 +28,31 @@
 
 ---
 
+## ⚠️ ERRO COMUM NO VERCEL
+
+Se você recebeu este erro:
+```
+No Output Directory named "dist" found
+```
+
+**✅ SOLUÇÃO RÁPIDA:**
+
+**Windows:**
+```cmd
+fix-and-deploy.bat
+```
+
+**Mac/Linux:**
+```bash
+bash fix-and-deploy.sh
+```
+
+**📖 Guias:**
+- [SOLUCAO_ERRO_VERCEL.md](SOLUCAO_ERRO_VERCEL.md) ⭐ Solução em 1 minuto
+- [FIX_VERCEL_ERROR.md](FIX_VERCEL_ERROR.md) - Guia completo
+
+---
+
 ## ✨ Funcionalidades
 
 ### 📊 **Dashboard Inteligente**

@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npm run build",
+  "buildCommand": "npm install && npm run build",
   "outputDirectory": "dist",
   "devCommand": "npm run dev",
   "installCommand": "npm install",
@@ -7,7 +7,14 @@
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "https://wyfg9tymudcijko0goh8xwz.supabase.co/functions/v1/:path*"
+      "destination": "https://oajntbrqzjbgfwyuocdi.supabase.co/functions/v1/make-server-7f44b203/:path*"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/[^.]+",
+      "dest": "/",
+      "status": 200
     }
   ],
   "headers": [
@@ -28,9 +35,5 @@
         }
       ]
     }
-  ],
-  "env": {
-    "VITE_SUPABASE_URL": "@supabase_url",
-    "VITE_SUPABASE_ANON_KEY": "@supabase_anon_key"
-  }
+  ]
 }
