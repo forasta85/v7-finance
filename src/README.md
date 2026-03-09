@@ -28,6 +28,39 @@
 
 ---
 
+## 🎯 COMEÇANDO DO ZERO NO GITHUB?
+
+**Nunca usou Git/GitHub antes?** Sem problemas! 
+
+### **🚀 OPÇÃO 1: Script Automático (RECOMENDADO!)**
+
+Execute este script que faz TUDO automaticamente:
+
+```cmd
+setup-github-completo.bat
+```
+
+**O script vai:**
+- ✅ Verificar/configurar Git
+- ✅ Criar repositório local
+- ✅ Conectar ao GitHub
+- ✅ Fazer primeiro push
+- ✅ Te guiar até o Vercel
+
+**Tempo:** 5 minutos | **Dificuldade:** ⭐ Fácil
+
+---
+
+### **📖 OPÇÃO 2: Passo a Passo Manual**
+
+Siga o guia completo: **[GITHUB_DO_ZERO.md](GITHUB_DO_ZERO.md)**
+
+**Ou o guia rápido:** **[COMECE_AQUI_GITHUB.md](COMECE_AQUI_GITHUB.md)** ⭐ RECOMENDADO!
+
+**Tempo:** 10-15 minutos | **Dificuldade:** ⭐⭐ Médio
+
+---
+
 ## ⚠️ ERRO COMUM NO VERCEL
 
 Se você recebeu este erro:
@@ -35,21 +68,44 @@ Se você recebeu este erro:
 No Output Directory named "dist" found
 ```
 
-**✅ SOLUÇÃO RÁPIDA:**
+**E/OU este erro:**
+```
+You've added another git repository inside your current repository
+```
 
-**Windows:**
+---
+
+## 🚀 SOLUÇÃO AUTOMÁTICA (Windows)
+
+Execute este script que corrige **TUDO** automaticamente:
+
 ```cmd
-fix-and-deploy.bat
+fix-tudo-e-deploy.bat
 ```
 
-**Mac/Linux:**
-```bash
-bash fix-and-deploy.sh
-```
+**Este script vai:**
+- ✅ Remover repositórios aninhados (desktop-tutorial)
+- ✅ Corrigir configuração do Vercel
+- ✅ Fazer commit e push automático
+- ✅ Iniciar deploy no Vercel
 
-**📖 Guias:**
-- [SOLUCAO_ERRO_VERCEL.md](SOLUCAO_ERRO_VERCEL.md) ⭐ Solução em 1 minuto
-- [FIX_VERCEL_ERROR.md](FIX_VERCEL_ERROR.md) - Guia completo
+---
+
+## 📖 GUIAS DISPONÍVEIS:
+
+**Escolha conforme sua situação:**
+
+| Situação | Guia | Tempo |
+|----------|------|-------|
+| 🪟 **Está no Windows** | [SOLUCAO_DEFINITIVA.md](SOLUCAO_DEFINITIVA.md) ⭐⭐⭐ | 2 min |
+| ⚡ **Quer solução rápida** | [EXECUTE_ISTO.md](EXECUTE_ISTO.md) ⭐⭐ | 1 min |
+| 📋 **Quer passo a passo** | [WINDOWS_PASSO_A_PASSO.md](WINDOWS_PASSO_A_PASSO.md) | 3 min |
+| 🔧 **Erro Vercel apenas** | [SOLUCAO_ERRO_VERCEL.md](SOLUCAO_ERRO_VERCEL.md) | 1 min |
+| 🔗 **Repositório aninhado** | [FIX_REPOSITORIO_ANINHADO.md](FIX_REPOSITORIO_ANINHADO.md) | 1 min |
+
+**Guias técnicos:**
+- [FIX_VERCEL_ERROR.md](FIX_VERCEL_ERROR.md) - Detalhes técnicos do erro Vercel
+- [WINDOWS_SOLUCAO.md](WINDOWS_SOLUCAO.md) - Solução completa para Windows
 
 ---
 
