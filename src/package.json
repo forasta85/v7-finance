@@ -1,0 +1,44 @@
+{
+  "name": "v7-finance",
+  "version": "1.0.0",
+  "description": "Sistema completo de gestão financeira com dashboard interativo",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "bash deploy.sh",
+    "build:clean": "npm install --legacy-peer-deps && npm run build"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "lucide-react": "^0.460.0",
+    "recharts": "^2.12.7",
+    "jspdf": "^2.5.2",
+    "jspdf-autotable": "^3.8.3",
+    "@supabase/supabase-js": "^2.45.4"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "tailwindcss": "^4.0.0"
+  },
+  "keywords": [
+    "finance",
+    "gestao-financeira",
+    "dashboard",
+    "react",
+    "supabase",
+    "vercel"
+  ],
+  "author": "V7 Finance Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}

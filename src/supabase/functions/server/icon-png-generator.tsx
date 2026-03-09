@@ -1,0 +1,55 @@
+// Gerador de ícones PNG usando data URI - Compatível com iOS
+export function generateIconPNG(size: number): string {
+  // Gerar SVG
+  const svg = `<?xml version="1.0" encoding="UTF-8"?>
+<svg width="${size}" height="${size}" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#dc2626" />
+      <stop offset="100%" stop-color="#7f1d1d" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-opacity="0.4"/>
+    </filter>
+    <radialGradient id="shine" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.4"/>
+      <stop offset="70%" stop-color="white" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Círculo principal com sombra -->
+  <circle cx="50" cy="50" r="48" fill="url(#grad)" filter="url(#shadow)"/>
+  
+  <!-- Anel decorativo -->
+  <circle cx="50" cy="50" r="42" fill="none" stroke="white" stroke-width="0.5" opacity="0.2"/>
+  
+  <!-- V grande -->
+  <path d="M 28 30 L 50 70 L 72 30" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.95"/>
+  
+  <!-- 7 - linha superior -->
+  <path d="M 38 35 L 62 35" stroke="white" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.95"/>
+  
+  <!-- 7 - linha diagonal -->
+  <path d="M 58 35 L 46 55" stroke="white" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.95"/>
+  
+  <!-- Seta de crescimento -->
+  <path d="M 50 72 L 50 78 M 47 75 L 50 78 L 53 75" stroke="#dc2626" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+  
+  <!-- Detalhes geométricos -->
+  <circle cx="50" cy="50" r="46" fill="none" stroke="white" stroke-width="0.5" opacity="0.15"/>
+  <circle cx="50" cy="50" r="38" fill="none" stroke="white" stroke-width="0.5" opacity="0.1"/>
+  
+  <!-- Pontos de acento -->
+  <circle cx="50" cy="12" r="1.5" fill="white" opacity="0.5"/>
+  <circle cx="88" cy="50" r="1.5" fill="white" opacity="0.5"/>
+  <circle cx="12" cy="50" r="1.5" fill="white" opacity="0.5"/>
+  
+  <!-- Brilho sutil no topo -->
+  <ellipse cx="50" cy="30" rx="25" ry="15" fill="url(#shine)" opacity="0.3"/>
+</svg>`;
+
+  // Para iOS, retornar o SVG mesmo (iOS Safari renderiza SVG como PNG automaticamente)
+  return svg;
+}
